@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - include:
+      file: /db/changelog/sprint-1/table_create_theatre.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_region.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_screen.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_seat.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_language.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_genre.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_movie.sql
+  - include:
+      file: /db/changelog/sprint-1/table_create_show.sql
