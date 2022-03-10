@@ -18,7 +18,7 @@ public class ShowService {
     public Show create(final ShowDTO showDTO) {
         final Date now = new Date();
         final Show show = Show.builder()
-                .theatreId(showDTO.getTheatreId())
+                .theaterId(showDTO.getTheaterId())
                 .regionId(showDTO.getRegionId())
                 .screenId(showDTO.getScreenId())
                 .movieId(showDTO.getMovieId())
@@ -41,7 +41,7 @@ public class ShowService {
         final Show existingShow = showRepository.findById(showDTO.getId())
                 .orElseThrow(() -> new RuntimeException("Record not found"));
 
-        existingShow.setTheatreId(showDTO.getTheatreId());
+        existingShow.setTheaterId(showDTO.getTheaterId());
         existingShow.setRegionId(showDTO.getRegionId());
         existingShow.setScreenId(showDTO.getScreenId());
         existingShow.setMovieId(showDTO.getMovieId());

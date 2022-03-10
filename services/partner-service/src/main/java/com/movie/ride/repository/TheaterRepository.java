@@ -1,10 +1,10 @@
 package com.movie.ride.repository;
 
-import com.movie.ride.model.Theatre;
+import com.movie.ride.model.Theater;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TheatreRepository extends CrudRepository<Theatre, Integer> {
+public interface TheaterRepository extends CrudRepository<Theater, Integer> {
 
 }

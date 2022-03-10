@@ -14,13 +14,13 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder(toBuilder = true)
 @Entity
-@Table(name = "theatre")
-public class Theatre {
+@Table(name = "theater")
+public class Theater {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String theatreCode;
+    private String theaterCode;
     private String name;
     private String address;
     private Integer regionId;

@@ -17,7 +17,7 @@ import java.util.Date;
 @Profile("local")
 public class DummyDataGenerator implements CommandLineRunner {
 
-    private final TheatreService theatreService;
+    private final TheaterService theaterService;
     private final RegionService regionService;
     private final ScreenService screenService;
     private final SeatService seatService;
@@ -108,13 +108,13 @@ public class DummyDataGenerator implements CommandLineRunner {
 
     private void createDummyScreen() {
         final Screen screen1 = Screen.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .name("SCREEN 1")
                 .status(Status.ACTIVE)
                 .build();
 
         final Screen screen2 = Screen.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .name("SCREEN 2")
                 .status(Status.ACTIVE)
                 .build();
@@ -143,21 +143,21 @@ public class DummyDataGenerator implements CommandLineRunner {
     }
 
     private void createDummyTheatre() {
-        final Theatre theatre1 = Theatre.builder()
-                .theatreCode("ABCDEF")
+        final Theater theater1 = Theater.builder()
+                .theaterCode("ABCDEF")
                 .name("THEATRE_1")
                 .address("DS/3, ASDASW, FXCA, 54532")
                 .regionId(1)
                 .build();
-        theatreService.save(theatre1);
+        theaterService.save(theater1);
 
-        final Theatre theatre = Theatre.builder()
-                .theatreCode("PQRSTU")
+        final Theater theater = Theater.builder()
+                .theaterCode("PQRSTU")
                 .name("THEATRE_2")
                 .address("XZ/3, DFASED, BFDS, 34865")
                 .regionId(2)
                 .build();
-        theatreService.save(theatre);
+        theaterService.save(theater);
     }
 
     private void createDummyRegion() {

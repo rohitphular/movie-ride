@@ -23,7 +23,7 @@ public class Screen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer theatreId;
+    private Integer theaterId;
     private String name;
     @Enumerated(EnumType.STRING)
     private Status status;

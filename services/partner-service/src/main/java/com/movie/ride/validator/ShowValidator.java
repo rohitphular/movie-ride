@@ -9,9 +9,9 @@ public class ShowValidator implements Validator<ShowDTO> {
     @Override
     public boolean isValid(ShowDTO showDTO) {
         /* If id provided, then check if record exists */
-        /* Verify if theatre-id is valid */
-        /* Verify if region-id is part of theatre */
-        /* Verify if screen-id is part of theatre */
+        /* Verify if theater-id is valid */
+        /* Verify if region-id is part of theater */
+        /* Verify if screen-id is part of theater */
         /* Verify if movie-id is valid record */
         /* Validate if effective-from-date & effective-to-date are correct */
         /* Validate if start-time & end-time are correct */

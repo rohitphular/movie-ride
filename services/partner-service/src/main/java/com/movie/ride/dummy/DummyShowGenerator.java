@@ -25,7 +25,7 @@ public class DummyShowGenerator implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         final ShowDTO showDTO1 = ShowDTO.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .regionId(1)
                 .screenId(1)
                 .movieId(1)
@@ -39,7 +39,7 @@ public class DummyShowGenerator implements CommandLineRunner {
         log.info("Show API Response Status - " + apiResponse1.getStatus());
 
         final ShowDTO showDTO2 = ShowDTO.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .regionId(1)
                 .screenId(2)
                 .movieId(2)
@@ -53,7 +53,7 @@ public class DummyShowGenerator implements CommandLineRunner {
         log.info("Show API Response Status - " + apiResponse2.getStatus());
 
         final ShowDTO showDTO3 = ShowDTO.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .regionId(1)
                 .screenId(2)
                 .movieId(3)
@@ -67,7 +67,7 @@ public class DummyShowGenerator implements CommandLineRunner {
         log.info("Show API Response Status - " + apiResponse3.getStatus());
 
         final ShowDTO showDTO4 = ShowDTO.builder()
-                .theatreId(1)
+                .theaterId(1)
                 .regionId(1)
                 .screenId(2)
                 .movieId(3)

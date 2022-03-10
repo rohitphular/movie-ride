@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS show_details;
 
 CREATE TABLE show_details (
   id INTEGER NOT NULL AUTO_INCREMENT,
-  theatre_id INTEGER NOT NULL,
+  theater_id INTEGER NOT NULL,
   region_id INTEGER NOT NULL,
   screen_id INTEGER NOT NULL,
   movie_id INTEGER NOT NULL,

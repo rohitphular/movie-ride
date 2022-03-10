@@ -29,8 +29,8 @@ public class ShowDao {
         Root<Show> showQ = cq.from(Show.class);
         List<Predicate> predicates = new ArrayList<>();
 
-        if(Objects.nonNull(searchCriteria.getTheatreId())) {
-            predicates.add(cb.equal(showQ.get("theatreId"), searchCriteria.getTheatreId()));
+        if(Objects.nonNull(searchCriteria.getTheaterId())) {
+            predicates.add(cb.equal(showQ.get("theaterId"), searchCriteria.getTheaterId()));
         }
 
         if(Objects.nonNull(searchCriteria.getRegionId())) {

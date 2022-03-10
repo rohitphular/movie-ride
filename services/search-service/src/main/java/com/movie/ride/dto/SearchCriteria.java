@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class SearchCriteria {
 
-    private Integer theatreId;
+    private Integer theaterId;
     private Integer regionId;
     private Integer movieId;
     private Date queryDate;

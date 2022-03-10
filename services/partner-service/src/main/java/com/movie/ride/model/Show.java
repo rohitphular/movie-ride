@@ -21,7 +21,7 @@ public class Show {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer theatreId;
+    private Integer theaterId;
     private Integer regionId;
     private Integer screenId;
     private Integer movieId;

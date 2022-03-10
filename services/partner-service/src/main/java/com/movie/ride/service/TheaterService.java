@@ -1,8 +1,8 @@
 package com.movie.ride.service;
 
 import com.movie.ride.enums.Status;
-import com.movie.ride.model.Theatre;
-import com.movie.ride.repository.TheatreRepository;
+import com.movie.ride.model.Theater;
+import com.movie.ride.repository.TheaterRepository;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 
@@ -10,20 +10,20 @@ import java.util.Date;
 
 @Data
 @Service
-public class TheatreService {
+public class TheaterService {
 
-    private final TheatreRepository theatreRepository;
+    private final TheaterRepository theaterRepository;
 
-    public Theatre save(final Theatre theatre) {
+    public Theater save(final Theater theater) {
         final Date now = new Date();
-        final Theatre newTheatre = theatre.toBuilder()
+        final Theater newTheatre = theater.toBuilder()
                 .status(Status.ACTIVE)
                 .createdBy(100)
                 .createdOn(now)
                 .updatedBy(100)
                 .updatedOn(now)
                 .build();
-        return theatreRepository.save(newTheatre);
+        return theaterRepository.save(newTheatre);
     }
 
 }

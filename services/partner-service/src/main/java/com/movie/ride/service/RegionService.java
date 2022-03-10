@@ -2,9 +2,7 @@ package com.movie.ride.service;
 
 import com.movie.ride.enums.Status;
 import com.movie.ride.model.Region;
-import com.movie.ride.model.Theatre;
 import com.movie.ride.repository.RegionRepository;
-import com.movie.ride.repository.TheatreRepository;
 import lombok.Data;
 import org.springframework.stereotype.Service;
 

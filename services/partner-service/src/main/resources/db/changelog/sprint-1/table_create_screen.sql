@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS screen;
 
 CREATE TABLE screen (
   id INTEGER NOT NULL AUTO_INCREMENT,
-  theatre_id INTEGER NOT NULL,
+  theater_id INTEGER NOT NULL,
   name VARCHAR(50) NOT NULL,
   status VARCHAR(10) NOT NULL,
   created_by INTEGER NOT NULL,

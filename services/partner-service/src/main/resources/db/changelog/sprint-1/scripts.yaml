@@ -1,6 +1,6 @@
 databaseChangeLog:
   - include:
-      file: /db/changelog/sprint-1/table_create_theatre.sql
+      file: /db/changelog/sprint-1/table_create_theater.sql
   - include:
       file: /db/changelog/sprint-1/table_create_region.sql
   - include:

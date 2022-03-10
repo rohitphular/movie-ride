@@ -15,7 +15,7 @@ import java.util.Date;
 public class ShowDTO extends BaseDTO {
 
     private Integer id;
-    private Integer theatreId;
+    private Integer theaterId;
     private Integer regionId;
     private Integer screenId;
     private Integer movieId;
