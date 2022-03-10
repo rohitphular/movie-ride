@@ -1,24 +1,16 @@
-#spring:
-#  datasource:
-#    url: jdbc:h2:mem:movie-ride
-#    username: user
-#    password: password
-#    driverClassName: org.h2.Driver
-#  jpa:
-#    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
-#
-#  h2:
-#    console:
-#      enabled: true
-
 spring:
   datasource:
-    url: jdbc:mysql://localhost:33306/movie-ride
-    username: pd_app_local
-    password: welcome123
-
+    url: jdbc:h2:file:/tmp/movie-ride
+    username: user
+    password: password
+    driverClassName: org.h2.Driver
   jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+
+  h2:
+    console:
+      enabled: true
