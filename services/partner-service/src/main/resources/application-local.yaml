@@ -13,6 +13,12 @@
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:33306/personal_dairy_local
+    url: jdbc:mysql://localhost:33306/movie-ride
     username: pd_app_local
-    password: AccionLocal@10
+    password: welcome123
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
